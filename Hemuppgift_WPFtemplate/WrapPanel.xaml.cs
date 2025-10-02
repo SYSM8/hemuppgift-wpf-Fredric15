@@ -22,6 +22,7 @@ namespace Hemuppgift_WPFtemplate
         public WrapPanel()
         {
             InitializeComponent();
+            btnHorizontal.IsChecked = true;
         }
         private void RadioButton_Checked(object sender, RoutedEventArgs e)
         {
