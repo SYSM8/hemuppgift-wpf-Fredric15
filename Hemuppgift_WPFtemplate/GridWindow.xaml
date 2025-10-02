@@ -13,11 +13,11 @@
         </Grid.RowDefinitions>
         <StackPanel>
             <StackPanel Orientation="Horizontal">
-                <TextBlock Text="Rad:"/>
-                <TextBox x:Name="txbRad" Width="50"/>
-                <TextBlock Text="Kolumn:"/>
-                <TextBox x:Name="txbKolumn" Width="50"/>
-                <Button x:Name="btnApply" Content="Apply" Width="50" Click="btnApply_Click"/>
+                <TextBlock Text="Rad:" Margin="5,0,0,0"/>
+                <TextBox x:Name="txbRad" Width="40" Margin="5,0,0,0"/>
+                <TextBlock Text="Kolumn:" Margin="5,0,0,0"/>
+                <TextBox x:Name="txbKolumn" Width="40" Margin="5,0,0,0"/>
+                <Button x:Name="btnApply" Content="Apply" Width="50" Margin="5,0,0,0"  Click="btnApply_Click"/>
             </StackPanel>
         </StackPanel>
         <Grid x:Name="GridRadKol" Grid.Row="1">
