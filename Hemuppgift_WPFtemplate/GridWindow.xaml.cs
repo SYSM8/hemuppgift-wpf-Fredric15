@@ -1,0 +1,46 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
+
+namespace Hemuppgift_WPFtemplate
+{
+    /// <summary>
+    /// Interaction logic for GridWindow.xaml
+    /// </summary>
+    public partial class GridWindow : Window
+    {
+        public GridWindow()
+        {
+            InitializeComponent();
+            
+
+        }
+
+        private void btnApply_Click(object sender, RoutedEventArgs e)
+        {
+            GridRadKol.Children.Clear();
+            int row = Convert.ToInt32(txbRad.Text);
+            int col = Convert.ToInt32(txbKolumn.Text);
+            Button btn = new Button();
+            btn.Content = $"Rad: {row} Kolumn: {col}";
+            GridRadKol.Children.Add(btn);
+            Grid.SetColumn(btn, col);
+            Grid.SetRow(btn, row);
+            btn.Background = new SolidColorBrush(Colors.LightGreen);
+            
+            
+
+
+        }
+    }
+}
