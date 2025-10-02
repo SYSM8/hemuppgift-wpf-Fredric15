@@ -18,7 +18,7 @@
         <Button Content="Grid" Click="Button_Click"/>
         <Button Content="StackPanel" Grid.Column="1" Click="Button_Click_1"/>
         <Button Content="WrapPanel" Grid.Row="1" Click="Button_Click_2"/>
-        <Button Content="DockPanel" Grid.Column="1" Grid.Row="1"/>
+        <Button Content="DockPanel" Grid.Column="1" Grid.Row="1" Click="Button_Click_3"/>
         
 
     </Grid>

@@ -16,7 +16,7 @@
             <RadioButton x:Name="btnVertical" Content="Vertical" Margin="0,10,0,0" Checked="RadioButton_Checked_1"/>
         </StackPanel>
         <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
-            <WrapPanel x:Name="PanelOri">
+            <WrapPanel x:Name="PanelOri" Grid.Row="1">
                 <Ellipse Fill="Red" Width="100" Height="100" Margin="5" />
                 <Ellipse Fill="Orange" Width="90" Height="90" Margin="5"/>
                 <Ellipse Fill="Yellow" Width="80" Height="80" Margin="5"/>
