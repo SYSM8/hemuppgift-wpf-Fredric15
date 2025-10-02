@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using System.Windows.Controls;
 
 namespace Hemuppgift_WPFtemplate
 {
@@ -23,6 +24,12 @@ namespace Hemuppgift_WPFtemplate
         {
             StackPanelWindow StackPanel = new StackPanelWindow();
             StackPanel.Show();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            WrapPanel WrapPanel = new WrapPanel();
+            WrapPanel.Show();
         }
     }
 }
